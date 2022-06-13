@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smash Into Pieces</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        
+</head>
+<body>
+    <nav>
+        <ul class="Menue" style="display: flex; flex-direction: row; list-style-type: none; padding: 20px">
+            <li><a href="index.html">Startsida</a></li>
+            <li><a href="alex.html">Lorem ipsum</a></li>
+            <li><a href="daniel.html">Bob Hund</a></li>
+            <li><a href="henrik.html">Rick Astly</a></li>
+            <li><a href="oscar.html">Rammstein</a></li>
+            <li><a href="sara.html">Smash Into Pieces</a></li>
+        </ul>
+    </nav>
+    
+    <h1>Smash Into Pieces</h1>
+
+    <h2>Om bandet</h2>
+    <h3>Officiell hemsida</h3>
+    <a href="https://www.smashintopieces.com/">Smash Into Pieces</a>
+    <a href="https://www.smashintopieces.com/music">Diskografi</a>
+
+    <h3>Info</h3>
+    <p>Smash Into Pieces är ett svenskt rockband från Örebro som bildades 2008.</p>
+
+    <h3>Diskografi</h3>
+    <ul id="Albums">
+        <li data-picturelink="https://static.wixstatic.com/media/620779_7f95fc1a516748518666cabddc49cee7~mv2.png/v1/fill/w_504,h_495,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Sk%C3%A4rmavbild%202022-01-16%20kl_%2022_12_46.png" name="A New Horizon">A New Horizon, 2021</li>
+        <li data-picturelink="https://static.wixstatic.com/media/620779_93f59202d3b4409e81c4b321d7007995~mv2.png/v1/fill/w_504,h_495,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Sk%C3%A4rmavbild%202022-01-16%20kl_%2022_13_05.png" name="Arcadia">Arcadia, 2020</li>
+        <li data-picturelink="https://static.wixstatic.com/media/620779_dbc34e2ffecb4b7c868e8c8bda2231c7~mv2.png/v1/fill/w_504,h_495,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Sk%C3%A4rmavbild%202022-01-16%20kl_%2022_13_26.png" name="Evolver">Evolver, 2018</li>
+        <li data-picturelink="https://static.wixstatic.com/media/620779_90faec9553204adfa0a5862c4d9fbce1~mv2.png/v1/fill/w_504,h_495,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Sk%C3%A4rmavbild%202022-01-16%20kl_%2022_13_42.png" name="Rise And Shine">Rise And Shine, 2017</li>
+        <li data-picturelink="https://static.wixstatic.com/media/620779_45266821fde4434ab932e64c05c01a5a~mv2.png/v1/fill/w_504,h_495,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Sk%C3%A4rmavbild%202022-01-16%20kl_%2022_14_02.png" name="The Apocalypse DJ">The Apocalypse DJ, 2015</li>
+
+    </ul>
+    <div id="AlbumPic"></div>
+
+    <hr>
+
+    <p>Radio Lorum, 2022</p>
+
+    <script>
+        let albums = document.getElementById("Albums")
+        let div = document.getElementById("AlbumPic")
+        albums.addEventListener('mouseover', () => {
+            let img = document.createElement("img")
+            img.src = event.target.getAttribute("data-picturelink")
+            img.alt = event.target.getAttribute("name")
+            div.appendChild(img)
+        })
+        albums.addEventListener('mouseout', () => {
+            div.innerHTML = ""
+        })
+    </script>
+</body>
+</html>
