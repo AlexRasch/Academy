@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Alex</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<!-- React -->
+	<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+	<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+
+
+	
 	<style>
 	.my-post {
 		padding-top: 10px;
@@ -41,9 +49,10 @@
 			<li class="nav-item">
 				<a class="nav-link" ahref="#">IpSum</a>
 			</li>
-			<li class="nav-item txt-white" >
-				<a class="nav-link" ahref="#" id="myDate">Lorum</a>
-			</li>
+			<div id="root">
+
+			</div>
+
 		</ul>
 	</div>
 	</nav>
@@ -128,11 +137,7 @@
 	
 	
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-	<script>
-		const d = new Date();
-		document.getElementById("myDate").innerText = d.toLocaleDateString("en-US");
-		console.log("Hit Me");
+	<script src="react.js" type="text/babel"></script>
 
-	</script>
   </body>
 </html>
