@@ -8,6 +8,7 @@ function GetTime(){
 
 ReactDOM.render(
 	
-	<GetTime/>
+	<GetTime/>,
+	document.getElementById("root")
 	
-),root
+)
