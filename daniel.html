@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1></h1>
+    <ul>
+        <li><a href="index.html">Startsida</a></li>
+        <li><a href="sara.html">Smash Into Pieces</a></li>
+        <li><a href="alex.html">Iron Maiden</a></li>
+        <li><a href="henrik.html">Rick Astley</a></li>
+        <li><a href="Oscar.html">Rammstein</a></li>
+    </ul>
+    <img src="https://upload.wikimedia.org/wikipedia/en/a/a9/Bobhundlogo.jpeg" alt="bob hund">
+    <p><a href="https://www.bobhund.se/">bob hund</a> </p>
+    <button onClick="showImage()">Sångare</button>
+<div id="first" style="height:400px; width:400px; display:none;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Bob_hund.jpg"/>
+</div>
+
+<script>
+    const showImage = () => {
+        document.getElementById("first").style.display ='block';
+    }
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
