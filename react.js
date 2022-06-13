@@ -7,7 +7,7 @@ function GetTime(){
 }
 
 ReactDOM.render(
-	<div>
+	
 	<GetTime/>
-	</div>
+	
 ),root
