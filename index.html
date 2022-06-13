@@ -7,6 +7,88 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   </head>
   <body>
+  <!-- Meny -->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center sticky-top">
+	<div class="container-fluid">
+	<a class="navbar-brand" href="#">Radio Lorum</a>
+	
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link" href="alex.html">Alex</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="daniel.html">Daniel</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="sara.html">Sara</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="Oscar.html">Oscar</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="henrik.html">Henrik</a>
+			</li>
+			<li class="nav-item txt-white" >
+				<a class="nav-link" ahref="#" id="myDate">Lorum</a>
+			</li>
+		</ul>
+	</div>
+	</nav>
+	<!-- End Meny -->
+	
+	<!-- Content -->
+	<div class="row">
+	
+
+	
+	
+	
+	<div class ="container-fluid">
+	<h1>Smash Into Pieces</h1>
+
+    <h2>Om bandet</h2>
+    <h3>Officiell hemsida</h3>
+    <a href="https://www.smashintopieces.com/">Smash Into Pieces</a>
+    <a href="https://www.smashintopieces.com/music">Diskografi</a>
+
+    <h3>Info</h3>
+    <p>Smash Into Pieces är ett svenskt rockband från Örebro som bildades 2008.</p>
+
+    <h3>Diskografi</h3>
+    <ul id="Albums">
+        <li data-picturelink="https://static.wixstatic.com/media/620779_7f95fc1a516748518666cabddc49cee7~mv2.png/v1/fill/w_504,h_495,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Sk%C3%A4rmavbild%202022-01-16%20kl_%2022_12_46.png" name="A New Horizon">A New Horizon, 2021</li>
+        <li data-picturelink="https://static.wixstatic.com/media/620779_93f59202d3b4409e81c4b321d7007995~mv2.png/v1/fill/w_504,h_495,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Sk%C3%A4rmavbild%202022-01-16%20kl_%2022_13_05.png" name="Arcadia">Arcadia, 2020</li>
+        <li data-picturelink="https://static.wixstatic.com/media/620779_dbc34e2ffecb4b7c868e8c8bda2231c7~mv2.png/v1/fill/w_504,h_495,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Sk%C3%A4rmavbild%202022-01-16%20kl_%2022_13_26.png" name="Evolver">Evolver, 2018</li>
+        <li data-picturelink="https://static.wixstatic.com/media/620779_90faec9553204adfa0a5862c4d9fbce1~mv2.png/v1/fill/w_504,h_495,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Sk%C3%A4rmavbild%202022-01-16%20kl_%2022_13_42.png" name="Rise And Shine">Rise And Shine, 2017</li>
+        <li data-picturelink="https://static.wixstatic.com/media/620779_45266821fde4434ab932e64c05c01a5a~mv2.png/v1/fill/w_504,h_495,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Sk%C3%A4rmavbild%202022-01-16%20kl_%2022_14_02.png" name="The Apocalypse DJ">The Apocalypse DJ, 2015</li>
+
+    </ul>
+    <div id="AlbumPic"></div>
+
+    <hr>
+
+    <p>Radio Lorum, 2022</p>
+
+    <script>
+        let albums = document.getElementById("Albums")
+        let div = document.getElementById("AlbumPic")
+        albums.addEventListener('mouseover', () => {
+            let img = document.createElement("img")
+            img.src = event.target.getAttribute("data-picturelink")
+            img.alt = event.target.getAttribute("name")
+            div.appendChild(img)
+        })
+        albums.addEventListener('mouseout', () => {
+            div.innerHTML = ""
+        })
+    </script>
+	
+	</div>
+	</div>
+	<!-- End Content -->
+	
+  
+  
     <h1>Hello, world!</h1>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>
